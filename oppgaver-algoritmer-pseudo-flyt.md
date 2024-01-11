@@ -63,9 +63,28 @@ WHILE i <= 5
   PRINT i
   INCREMENT i BY 2
 ENDWHILE
+
+svar:
  1
  4
 
 ## Oppgave 7: H23-5
 
 ![Alt text](image.png)
+
+## Oppgave 8: V23-3
+
+```python 
+function trekanttall (n)
+  set tn to n * (n+1)/2
+  return tn
+endfunction
+
+set sum to 0
+for i from 1 to 10
+  set tn to trekanttall(i)
+  set sum to sum + tn
+endfor
+
+print("Summen av de ti første trekanttallene er: " + sum)
+```
